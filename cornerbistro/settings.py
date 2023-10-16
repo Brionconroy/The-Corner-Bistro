@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['the-corner-bistro-6432029ab4f6.herokuapp.com', 'localhost', '8000-brionconroy-thecornerbi-b0jocnmhjfm.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['the-corner-bistro-6432029ab4f6.herokuapp.com', 'localhost', '8000-brionconroy-thecornerbi-ngwcjn409f0.ws-eu105.gitpod.io']
 
 
 # Application definition
