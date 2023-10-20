@@ -11,12 +11,14 @@ body {
     height: 100vh;
 }
 
+
+
 p {
     text-align: center;
     line-height: 30px;
-    background-color: rgba(62, 60, 60, 0.8);
+    background-color: rgba(199, 126, 126, 0.85);
+    color: rgba(129, 124, 216, 0.85);
     padding: 100px 50px;
-    margin-top: 5px;
 }
 
 /* Navbar */
@@ -33,9 +35,17 @@ p {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, .85);   
+    background-color: rgba(199, 126, 126, 0.85);
+    color: rgba(129, 124, 216, 0.85);
 }
 
-.navbar-brand {
-    border-color: blue;
+.bg-dark {
+    background-color: #afc0d0!important;
+}
+
+.container-fluid {
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
