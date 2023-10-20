@@ -1,6 +1,5 @@
 body {
     font-family: 'Roboto Slab', serif;
-    background-color: brown;
 }
 
 .nav-container {
@@ -10,4 +9,33 @@ body {
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
+}
+
+p {
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(62, 60, 60, 0.8);
+    padding: 100px 50px;
+    margin-top: 5px;
+}
+
+/* Navbar */
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .85);   
+}
+
+.navbar-brand {
+    border-color: blue;
 }
