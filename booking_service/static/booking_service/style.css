@@ -13,7 +13,7 @@ body {
 
 
 
-p {
+.p-top {
     text-align: center;
     line-height: 30px;
     background-color: rgba(199, 126, 126, 0.85);
@@ -39,8 +39,8 @@ p {
     color: rgba(129, 124, 216, 0.85);
 }
 
-.bg-dark {
-    background-color: #afc0d0!important;
+.footer {
+    background-color: #527fa9!important;
 }
 
 .container-fluid {
@@ -48,4 +48,8 @@ p {
     left: 0;
     padding-left: 0;
     padding-right: 0;
+}
+
+.sign-up-move-right {
+    
 }

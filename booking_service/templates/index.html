@@ -9,6 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/293de5afa9.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
 <body>
 
   <!-- Navbar -->
-  <div class="container-fluid .navalert-container">
+  <div class="container-fluid navalert-container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">The Corner Bistro</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -37,9 +38,9 @@
             <a class="nav-link" href="#">Bookings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Sign-in</a>
+            <a class="nav-link" href="#">Log-in</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item sign-up-move-right">
             <a class="nav-link" data-toggle="modal" data-target="#modalsignup">Sign-up</a>
           </li>
         </ul>
@@ -48,7 +49,7 @@
   </div>
 
   <div class="nav-container">
-    <p>The corner bistro opened its doors in 2012 and since then been one of the top restaurants in Dublin. We are
+    <p class="p-top">The corner bistro opened its doors in 2012 and since then been one of the top restaurants in Dublin. We are
       small,
       family run restaurant, serving delicious food using only freshest Irish ingredients. We really look forward to
       having you here.</p>
@@ -87,10 +88,11 @@
   </div>
 
   <!-- Footer  -->
-  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
-    <div class="container text-center">
-      <small>Copyright &copy; Your Website</small>
-    </div>
+  <footer class="footer mt-auto py-3 dark-bg">
+    <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
+      <i class="fab fa-twitter-square ms-3"></i>
+      <i class="fab fa-instagram-square ms-3"></i>
+      <i class="fab fa-youtube-square ms-3"></i></p>
   </footer>
 
   <!-- Bootstrap JS -->
