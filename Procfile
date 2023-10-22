@@ -1,1 +1,1 @@
-web: gunicorn cornerbistro.wsgi
+web: gunicorn cornerbistro.wsgi 

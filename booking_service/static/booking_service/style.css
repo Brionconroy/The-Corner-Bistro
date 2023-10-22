@@ -40,7 +40,7 @@ body {
 }
 
 .footer {
-    background-color: #527fa9!important;
+    background-color: #27c32c!important;
 }
 
 .container-fluid {
@@ -48,8 +48,4 @@ body {
     left: 0;
     padding-left: 0;
     padding-right: 0;
-}
-
-.sign-up-move-right {
-    
 }
