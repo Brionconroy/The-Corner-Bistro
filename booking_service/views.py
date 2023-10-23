@@ -7,3 +7,7 @@ def index(request):
 
 def base(request):
     return render(request, 'base.html')
+
+
+def booking(request):
+    return render(request, 'booking.html')
