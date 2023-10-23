@@ -40,6 +40,24 @@ I created a user storys template through github issues to layout each user stori
 ![](booking_service/static/images/readme/agile-user-storys.png)
 
 ## User Experience
+
+As a new visitor to the site, I would like to be able to make a booking and edit it acourdingly. i would also like to be able to login to the website so that i may find and edit my booking. As a returning customer, I want to be able to easily navigate the site and quickily find what I'm looking for. I would also like the ability to contact the Resteraunt directly through their website.
+
+### The User Experience Design was constructed using the five planes.
+
++ Stratagy: Is this content relvent to the user and is it culturally appropriate?
++ Scope: Are we accomplishing our goals of broadcasting the companys ethos and products?
++ Structure: How many pages should we have in our website and why?
++ Skeleton: Does the structure of the wireframe meet the costumers/users needs? Is the web page responsive?
++ Surface: Does the site look good visully? Does it have enough images and colours?
+
+# Desktop Landing Page
+![](booking_service/static/images/readme/wireframe-landingpage.png)
+
+
+# Mobile Landing Page
+![](booking_service/static/images/readme/wireframe-mobile.png)
+
 ## Features
 ## Technologies
 ## Testing
