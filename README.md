@@ -106,6 +106,49 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 ## Deployment
 
+The first thing you should do when creating a new project is to deploy it as quick as you can to prevent any nasty errors that might be a pain to fix when your project is complete. For this project I used Heroku to deploy too. The framework I used in this project was Django, so the first thing you need to do is to create a Django project in you work space and install all the supporting libraries. Once evrthing is installed you should you should make a migration to the database with a small model to make sure everything works.
+
+Just to make a note of this the database used in the workspace (db.sqlite3) does not work when deployed to Heroku so we need a differnt database when deplying. I used ElephantSQL database as it was free and works with Heroku.
+
+### Installing Django and Libraries
+
++ Step 1: Django and Gunicorn installation enter in the terminal:
+
+        pip3 install 'django<4' gunicorn
++ Step 2: Install Supporting Libraries in the terminal:
+
+        pip3 install dj_database_url==0.5.0 psycopg2
++ Step 3: Install Cloudinary Libraries in the terminal:
+
+        pip3 install dj3-cloudinary-storage
+        pip3 install urllib3==1.26.15
++ Step 4: Create a requirements file in the terminal:
+
+        pip3 freeze --local > requirements.txt
++ Step 5: Create a Project in the terminal:
+
+        django-admin startproject *Your Project name*.
++ Step 6: Create a App in the terminal:
+
+        python3 manage.py startapp *App name*
++ Step 7: Add App name to the  Installed Apps in setting.py file.
+
++ Step 8: Migrate the changes enter in the terminal:
+
+        python3 manage.py migrate
++ Step 9: Run the local server to make sure that everthing works, enter in the terminal:
+
+        python3 manage.py runserver
++ Step 10: Add your local URL from the preview page to your setting.py file in the section thats called ALLOWED HOST. You must also Add your Heroku URL here too.
+
++ Step 11: Create ElephantSQL Database, by creating/login to your account, creating a new instance, and copying the URL into Heroku (See step 13)
+
++ Step 12: Create a new Heroku project by creating/login to your account and clicking (Create new app). Pick a name for your project and the region that your project is base in. Then click CREATE APP.
+
++ Step 13: 
+
+
+
 ## Credits
 
 ### Media
