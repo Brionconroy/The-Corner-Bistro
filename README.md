@@ -88,7 +88,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 * [Django 3.2.22](https://www.djangoproject.com/)
 * [Bootstrap 4.6.2](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-* [Heroku]((https://www.heroku.com))
+* [Heroku](https://www.heroku.com)
 * [ElephantSQL](https://www.elephantsql.com/)
 * [SQLite3](https://www.sqlite.org/index.html)
 * [Google Fonts](https://fonts.google.com/)
