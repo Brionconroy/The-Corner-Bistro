@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import UserBookingForm
 
 
 def index(request):
@@ -10,4 +11,10 @@ def base(request):
 
 
 def booking(request):
-    return render(request, 'booking.html')
+    return render(
+        request,
+        'booking.html',
+        {
+            "user_booking-form": UserBookingForm()
+        },
+        )

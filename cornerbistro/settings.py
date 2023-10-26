@@ -31,7 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['the-corner-bistro-6432029ab4f6.herokuapp.com', 'localhost', '8000-brionconroy-thecornerbi-ngwcjn409f0.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['the-corner-bistro-6432029ab4f6.herokuapp.com',
+                 'localhost',
+                 '8000-brionconroy-thecornerbi-ngwcjn409f0.ws-eu105.gitpod.io']
 
 
 # Application definition
@@ -49,6 +51,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'crispy_forms',
     'booking_service',
 ]
 
@@ -56,6 +59,8 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -142,6 +147,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+
 STATICFILE_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

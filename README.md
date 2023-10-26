@@ -288,6 +288,10 @@ Just to make a note of this the database used in the workspace (db.sqlite3) does
 
 ## Credits
 
++ This help me set up the time zone correctly  [Timezone](https://www.educative.io/answers/what-is-djangoutilstimezone)
+
++ This helped me set up my crispyform [Crispy Forms](https://simpleisbetterthancomplex.com/tutorial/2018/08/13/how-to-use-bootstrap-4-forms-with-django.html)
+
 ### Media
 
 Background image was taken from [pexels](https://www.pexels.com/search/bistro/)
