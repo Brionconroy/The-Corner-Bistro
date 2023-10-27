@@ -61,8 +61,14 @@
 
   <div class="background-image"></div>
 
-  {% block content %}
-  {% endblock content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+          {% block content %}
+          {% endblock %}
+      </div>
+    </div>
+  </div>
 
   <!-- Footer  -->
   <footer class="footer mt-auto py-3 dark-bg">
