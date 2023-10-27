@@ -1,8 +1,8 @@
-from django.views.generic import CreateView
 from .models import Reservation
+from django import forms
 
 
-class UserBookingForm(CreateView):
+class UserBookingForm(forms.ModelForm):
     class Meta:
         model = Reservation
         fields = ('first_name',
@@ -12,3 +12,4 @@ class UserBookingForm(CreateView):
                   'number_of_guests',
                   'special_request',
                   'special_requirments')
+                  
