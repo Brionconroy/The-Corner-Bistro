@@ -12,14 +12,6 @@ body {
 }
 
 
-.p-top {
-    text-align: center;
-    line-height: 30px;
-    background-color: rgba(199, 126, 126, 0.85);
-    color: rgba(129, 124, 216, 0.85);
-    padding: 100px 50px;
-}
-
 /* Navbar */
 .navalert-container {
     position: relative;
@@ -34,11 +26,6 @@ body {
     border: 0;
     width: 100%;
     background-color: rgba(205, 212, 205, 0.85);
-}
-
-.footer {
-    background-color: rgba(205, 212, 205, 0.85);
-    position: relative;
 }
 
 .container-fluid {
@@ -72,4 +59,22 @@ body {
 
 .form-group {
     margin-bottom: 1rem;
+}
+
+/* index page layout */
+
+.p-top {
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(205, 212, 205, 0.85);
+    color: rgba(10, 10, 10, 0.85);
+    padding: 100px 50px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgba(205, 212, 205, 0.85);
+    color: rgba(63, 61, 61, 0.85);
+    position: relative;
 }
