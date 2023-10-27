@@ -8,8 +8,8 @@ class UserBookingForm(forms.ModelForm):
         fields = ('first_name',
                   'last_name',
                   'email',
-                  'date_and_time',
+                  'time',
+                  'date',
                   'number_of_guests',
-                  'special_request',
-                  'special_requirments')
+                  'special_request_requirments')
                   

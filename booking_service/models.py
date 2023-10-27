@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
-from django.utils import timezone
+import django.utils.timezone
 
 
 class Reservation(models.Model):
@@ -9,10 +9,10 @@ class Reservation(models.Model):
     last_name = models.CharField(max_length=50, blank=False, null=False, default='')
     naming_id = models.AutoField(primary_key=True)
     email = models.EmailField(default='')
-    date_and_time = models.DateTimeField()
+    date = models.DateField(auto_now=False, default=django.utils.timezone.now)
+    time = models.TimeField(default="12:00")
     number_of_guests = models.PositiveSmallIntegerField()
-    special_request = models.TextField(default='')
-    special_requirments = models.TextField(default='')
+    special_request_requirments = models.TextField(default='')
 
     class Meta:
         ordering = ["naming_id"]
