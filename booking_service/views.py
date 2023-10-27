@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import UserBookingForm
+from django.contrib import messages
+
 
 
 def index(request):
@@ -20,6 +22,6 @@ def booking(request):
             booking.save()
             messages.info(request, 'Booking Successfully!')
             pass
+        return redirect('index')
     else:
-
         return render(request, 'booking_service/booking.html', {'form': form})

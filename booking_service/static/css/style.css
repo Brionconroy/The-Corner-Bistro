@@ -53,8 +53,23 @@ body {
 .form_layout {
     background-color: rgba(202, 213, 202, 0.85);
     position: relative;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    width: fit-content;
 }
 
 .booking_header {
     text-align: center;
+}
+
+#id_special_request_requirments {
+    height: 50px;
+}
+
+.booking_form {
+    line-height: 5px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
 }
