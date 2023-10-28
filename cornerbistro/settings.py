@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',
+    'booking_service',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -52,7 +53,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'crispy_forms',
-    'booking_service',
 ]
 
 SITE_ID = 1
