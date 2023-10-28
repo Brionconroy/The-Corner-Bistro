@@ -114,6 +114,10 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 ## Testing
 
 ### Bugs
+
++ My login, logout and signup template from allauth where not loading my base templates.
+  + The fix was to move my booking_service app in the installeed app section in setting.py above the allauth installed app. this means the booking_service app was loading first.
+
 ### Manual Testing
 ### Code Validation
 

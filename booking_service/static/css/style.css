@@ -11,6 +11,10 @@ body {
     height: 100vh;
 }
 
+.button_color
+.btn {
+    background-color: rgba(109, 132, 106, 0.85);
+}
 
 /* Navbar */
 .navalert-container {
@@ -45,7 +49,10 @@ body {
     width: fit-content;
 }
 
-.booking_header {
+.booking_header,
+.login_heading,
+.logout_heading,
+.sign_up_heading {
     text-align: center;
 }
 
@@ -60,6 +67,27 @@ body {
 .form-group {
     margin-bottom: 1rem;
 }
+
+.sign_in_form {
+    padding: 20px;
+    margin: 20px;
+}
+
+.signout_content {
+    text-align: center;
+}
+
+.booking_view
+ {
+    background-color: rgba(202, 213, 202, 0.85);
+    text-align: center;
+ }
+
+ .your_booking_table {
+    line-height: 1;
+    padding: 20px;
+    background-color: rgba(202, 213, 202, 0.85);
+ }
 
 /* index page layout */
 

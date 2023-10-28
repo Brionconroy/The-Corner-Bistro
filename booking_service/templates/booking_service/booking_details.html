@@ -1,20 +1,20 @@
 {% extends 'booking_service/base.html' %}
+{% load static %}
 {% block content %}
 
 {% if user.is_authenticated %}
 <div class="container form_layout">
-    <div class="row">
-        <h2 class="booking_header">hello</h2>
-        <div class="card mb-4 mt-3">
-            <div class="card-body">
+    <div class="row your_booking_table">
+        <div class="card">
+            <div class="booking_view">
                 <form method="post" class="booking_form">
 
                     {% csrf_token %}
-                    <h2>your booking</h2>
-                    <table>
+                    <h2>Your Booking</h2>
+                    <table class="your_booking_table">
                         {% for data in bookings %}
                         <tr>
-                            <td>{{ data.first_name }}</td>
+                            <td>{{ booking }}</td>
                             <td>{{ data.last_name }}</td>
                             <td>{{ data.time }}</td>
                             <td>{{ data.date }}</td>
@@ -22,8 +22,8 @@
                         </tr>
                         {% endfor %}
                     </table>
-                    <a href="{% url 'index' %}" class="btn btn-danger btn-signup">Cancel</a>
-                    <button type="submit" class="btn btn-success btn-signup btn-lg">Update Booking</button>
+                    <a href="{% url 'index' %}" class="btn btn-danger">Cancel</a>
+                    <button type="submit" class="btn btn-success button_color">Update Booking</button>
                 </form>
             </div>
         </div>
