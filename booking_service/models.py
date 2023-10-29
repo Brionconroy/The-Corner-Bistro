@@ -5,8 +5,10 @@ import django.utils.timezone
 
 
 class Reservation(models.Model):
-    first_name = models.CharField(max_length=50, blank=False, null=False, default='')
-    last_name = models.CharField(max_length=50, blank=False, null=False, default='')
+    first_name = models.CharField(max_length=50, blank=False,
+                                  null=False, default='')
+    last_name = models.CharField(max_length=50, blank=False,
+                                 null=False, default='')
     naming_id = models.AutoField(primary_key=True)
     email = models.EmailField(default='')
     date = models.DateField(auto_now=False, default=django.utils.timezone.now)
