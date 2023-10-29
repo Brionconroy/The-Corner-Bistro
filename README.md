@@ -245,6 +245,98 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 ### Code Validation
 
+### HTML
+
++ Before I deployed my App for the final time. I ran the code throught the validator and it pass.
+
+<details>
+
+<summary>W3C Validation HTML</summary>
+
+![W3C Validation HTML](booking_service/static/images/readme/validation_testing/html-validater.png)
+
+</details>
+
+### CSS
+
++ Before I deployed my App for the final time. I ran the code throught the validator and it pass.
+
+<details>
+
+<summary>W3C Validation CSS</summary>
+
+![W3C Validation CSS](booking_service/static/images/readme/validation_testing/css-validation.png)
+
+</details>
+
+### Python
+
++ Before I deployed my App for the final time. I ran the code throught the PEP8 validator and it pass.
+
+<details>
+
+<summary>view.py</summary>
+
+![view.py](booking_service/static/images/readme/validation_testing/view.py_validation.png)
+
+</details>
+
+<details>
+
+<summary>setting.py</summary>
+
+![setting.py](booking_service/static/images/readme/validation_testing/setting.py_validator.png)
+
+</details>
+
+<details>
+
+<summary>models.py</summary>
+
+![models.py](booking_service/static/images/readme/validation_testing/models.py_validation.png)
+
+</details>
+
+<details>
+
+<summary>form.py</summary>
+
+![form.py](booking_service/static/images/readme/validation_testing/form.py-validation.png)
+
+</details>
+
+<details>
+
+<summary>corner bistro url.py</summary>
+
+![corner_bistro_url.py](booking_service/static/images/readme/validation_testing/corner_bistro_url.py_validation.png)
+
+</details>
+
+<details>
+
+<summary>booking service url.py</summary>
+
+![booking_service_url.py](booking_service/static/images/readme/validation_testing/booking_service_url.py_validator.png)
+
+</details>
+
+<details>
+
+<summary>app.py</summary>
+
+![app.py](booking_service/static/images/readme/validation_testing/app.py_validation.png)
+
+</details>
+
+<details>
+
+<summary>admin.py</summary>
+
+![admin.py](booking_service/static/images/readme/validation_testing/admin.py_valation.png)
+
+</details>
+
 ## Deployment
 
 The first thing you should do when creating a new project is to deploy it as quick as you can to prevent any nasty errors that might be a pain to fix when your project is complete. For this project I used Heroku to deploy too. The framework I used in this project was Django, so the first thing you need to do is to create a Django project in you work space and install all the supporting libraries. Once evrthing is installed you should you should make a migration to the database with a small model to make sure everything works.
