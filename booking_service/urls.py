@@ -7,6 +7,7 @@ urlpatterns = [
     path('', index, name='index'),
     path('base/', base, name='base'),
     path('', booking, name='booking'),
+    path('menu/', menu, name='menu'),
     path('accounts/', include('allauth.urls')),
     path('booking_details/', booking_details, name='booking_details'),
 ]

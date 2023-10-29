@@ -12,6 +12,10 @@ def base(request):
     return render(request, 'booking_service/base.html')
 
 
+def menu(request):
+    return render(request, 'booking_service/menu.html')
+
+
 def booking(request):
     form = UserBookingForm()
     if request.method == 'POST':

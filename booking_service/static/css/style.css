@@ -96,7 +96,17 @@ body {
     line-height: 30px;
     background-color: rgba(205, 212, 205, 0.85);
     color: rgba(10, 10, 10, 0.85);
-    padding: 100px 50px;
+    padding: 50px 50px;
+}
+
+/* Menu page layout */
+
+.menu {
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(205, 212, 205, 0.85);
+    color: rgba(10, 10, 10, 0.85);
+    padding: 20px 20px;
 }
 
 /* Footer */
