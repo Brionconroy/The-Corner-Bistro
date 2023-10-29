@@ -30,6 +30,9 @@ def booking(request):
     else:
         return render(request, 'booking_service/booking.html', {'form': form})
 
+
 def booking_details(request):
     bookings = Reservation.objects.all()
-    return render(request, 'booking_service/booking_details.html', {'bookings': bookings})
+    return render(request,
+                  'booking_service/booking_details.html',
+                  {'bookings': bookings})
