@@ -97,6 +97,7 @@ body {
     background-color: rgba(205, 212, 205, 0.85);
     color: rgba(10, 10, 10, 0.85);
     padding: 50px 50px;
+    margin-top: 5px;
 }
 
 /* Menu page layout */
@@ -107,6 +108,7 @@ body {
     background-color: rgba(205, 212, 205, 0.85);
     color: rgba(10, 10, 10, 0.85);
     padding: 20px 20px;
+    margin-top: 5px;
 }
 
 /* Footer */
