@@ -117,3 +117,19 @@ body {
     color: rgba(63, 61, 61, 0.85);
     position: relative;
 }
+
+.facebook {
+    color: blue;
+}
+
+.twitter {
+    color: rgb(78, 202, 243);
+}
+
+.instagram {
+    color: rgb(173, 36, 210);
+}
+
+.youtube {
+    color: rgb(210, 36, 36);
+}
