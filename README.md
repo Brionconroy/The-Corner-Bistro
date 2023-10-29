@@ -119,6 +119,46 @@ As a new visitor to the site, I would like to be able to make a booking and edit
   + The fix was to move my booking_service app in the installeed app section in setting.py above the allauth installed app. this means the booking_service app was loading first.
 
 ### Manual Testing
+
+# User Stories Testing
+
+#### 1. Pages
+
+| **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
+|-------------|------------|---------------------|-------------------|-------------------|
+| 1 | View Website Landing Page | As a user I can navigate to the website so that I can make a booking | The Restaurant will need a visible landing page for customers to view.The page must have a navbar in header. The page should have an introductory paragraph. The page should have social media links in the footer. | Pass |
+| 12 | View Menu Page | As a user i can view the menu so that Information of what's i can eat in the Restaurant. | Menu button in the home page navbar. Navbar button brings me to a separate page. The new page shows me the menu. | Pass |
+
+#### 2. Admin
+
+| **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
+|-------------|------------|---------------------|-------------------|-------------------|
+| 8 | Admin Control Page | As a Admin user i can view and manipulate bookings so that I con received booking data | That a authenticated Admin user can select and view date and times for booking information. | Pass |
+| 6 | Delete Booking as Admin | As a Admin i can make Changes to the booking so that Delete a booking | A Admin can select which booking to delete. Admin user must be able to delete booking from the site. | Pass |
+
+#### 3. User
+
+| **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
+|-------------|------------|---------------------|-------------------|-------------------|
+| 11 | User Sign-up | As a User I want to be able to sign-up so that I can see my booking | Must be linked to sign up page in the navbar. Must have a form to get users personal information. Should return you to the home page after sign up. | Pass |
+| 10 | User Log-in | As a User i can make a Log-in so that edit my booking |  Create a Log-in form for the user with password to protect user data. Store basic customer information on database system. | Pass |
+| 2 | Make online Booking | As a User I can access an online booking form so that I can make my online booking. |  There must be a button on the page in order to redirect the customer to a form for making a booking. This form must ask for User details for making a booking. All the User booking details must be saved to data base. | Pass |
+| 3 | User Information Form | In order to make a booking as a user I want to fill out a form so the Restaurant knows my details about my booking. | Have a link on the home page that redirects to the form. The form must contain all relevant booking details. Admin must be able to see all the booking in admin panal. | Pass |
+
+#### 4. Im Progress
+
+| **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
+|-------------|------------|---------------------|-------------------|-------------------|
+| 4 | User Booking view | As a user i can view my online booking so that I can make changes to it | Once User logs-in they can view there booking details. Once User logs-in they can make changes to there bookings. | In Progress |
+| 9 | Edit Online Booking | As a User I wont to be able to edit my booking make a change if i need too. | A User can select there booking to edit. A User must be able to change they data of that booking. A User can get confirmation of change in there booking. | In Progress |
+
+#### 4. Potentail Features
+
+| **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
+|-------------|------------|---------------------|-------------------|-------------------|
+| 7 | Prevent Over Booking | In order to avoid over booking as a user I can access the booking log which checks for availability. | The create log that checks if the Restaurant has availability in the database. The user can view this log. | Fail |
+| 13 | Log-in with third party account | As a User i can login with my google account so that i don't have to se up an account with the restaurant | In log-in page there should be a button that allows me to sign in with my google account | Fail |
+
 ### Code Validation
 
 ## Deployment
@@ -295,6 +335,8 @@ Just to make a note of this the database used in the workspace (db.sqlite3) does
 + This help me set up the time zone correctly  [Timezone](https://www.educative.io/answers/what-is-djangoutilstimezone)
 
 + This helped me set up my crispyform [Crispy Forms](https://simpleisbetterthancomplex.com/tutorial/2018/08/13/how-to-use-bootstrap-4-forms-with-django.html)
+
++ This helped me set up my menu format [Codesandbox](https://codesandbox.io/s/restaurant-menu-with-html-css-3bqzx?file=/index.html:527-5114)
 
 ### Media
 
