@@ -22,6 +22,7 @@ To create this website Agile principles where used. The frameworks used were boo
     - ## [Bugs](#bugs-1)
     - ## [Manual Testing](#manual-testing-1)
     - ## [Code Validation](#code-validation-1)
+    - ## [Responsiveness Testing](#responsiveness-testing-1)
     
 
 - ## [Deployment](#deployment-1)
@@ -334,6 +335,52 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 <summary>admin.py</summary>
 
 ![admin.py](booking_service/static/images/readme/validation_testing/admin.py_valation.png)
+
+</details>
+
+## Responsiveness Testing
+
+### Lighthouse
+
++ I used the chrome developer tool light house witch gave me the insight of how my webpage looked on diffent screens everything looked great on each page and when i ran the light house analizs these are the score i got returned to me.
+
+<details>
+
+<summary>Booking page</summary>
+
+![Booking page](booking_service/static/images/readme/lighthous_testing/lighthouse_booking.png)
+
+</details>
+
+<details>
+
+<summary>Home page</summary>
+
+![Home page](booking_service/static/images/readme/lighthous_testing/lighthouse_home.png)
+
+</details>
+
+<details>
+
+<summary>login page</summary>
+
+![login page](booking_service/static/images/readme/lighthous_testing/lighthouse_login.png)
+
+</details>
+
+<details>
+
+<summary>Menu page</summary>
+
+![menu page](booking_service/static/images/readme/lighthous_testing/lighthouse_menu.png)
+
+</details>
+
+<details>
+
+<summary>Menu page</summary>
+
+![menu page](booking_service/static/images/readme/lighthous_testing/lighthouse_sign_up.png)
 
 </details>
 
