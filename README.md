@@ -82,6 +82,90 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 ## Features
 
+### Header
+
++ The header contains the name of the website and when you click on it it will bring you to the landing page.
++ The header also contains a sticky navbar, the navbar has four differnt heading the heading will change if you are login from login to loggout. Bookimg will only apear if you are logged in.
++ the header reflects the login state of the user by showing the login or the log out icon inthe header.
+
+<details>
+
+<summary>Login</summary> 
+
+![Login](booking_service/static/images/readme/features/login.png)
+
+</details>
+
+<details>
+
+<summary>Booking</summary> 
+
+![Booking](booking_service/static/images/readme/features/header_booking.png)
+
+</details>
+
+### Menu
+
++ The menu informs users what the can expect when going to the restaurnt
+
+<details>
+
+<summary>Menu</summary>
+
+![menu](booking_service/static/images/readme/features/menu.png)
+
+</details>
+
+### Login 
+
++ The log in on the navbar will disapear when you have logged in confreming your login
++ on the login form you can also sign up if you havent alread done so.
+
+<details>
+
+<summary>login</summary>
+
+![login](booking_service/static/images/readme/features/login_form.png)
+
+</details>
+
+### Logout
+
++ By clicking on the log-out in the navbar it will bing you to another page were it will ask you again would you like to sign out.
+
+<details>
+
+<summary>logout</summary>
+
+![logout](booking_service/static/images/readme/features/sign_out.png)
+
+</details>
+
+### Sign Up
+
++ The sign up form allows users to sign up to the website to make booking.
+
+<details>
+
+<summary>Sign up</summary>
+
+![Sign up](booking_service/static/images/readme/features/signup_from.png)
+
+</details>
+
+### Booking Form
+
++ The booking form can only be accessed if you have loged in.
++ The form contains all the relative information for a user to make a booking.
+
+<details>
+
+<summary>Booking form</summary>
+
+![Booking form](booking_service/static/images/readme/features/booking_form.png)
+
+</details>
+
 ## Technologies
 
 ### Libraries, Frameworks, Tools
