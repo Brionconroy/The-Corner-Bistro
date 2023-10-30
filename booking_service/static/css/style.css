@@ -3,7 +3,7 @@ body {
 }
 
 .background-image {
-    background: url(../images/background/bistro.resize.png) no-repeat center center;
+    background: url(https://res.cloudinary.com/du4zinzmk/image/upload/v1698595026/static/images/background/bistro.resize.a67e1ba28de2.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
