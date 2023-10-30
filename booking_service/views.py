@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponseRedirect
 from .forms import UserBookingForm
 from django.contrib import messages
 from .models import Reservation
@@ -36,3 +36,4 @@ def booking_details(request):
     return render(request,
                   'booking_service/booking_details.html',
                   {'bookings': bookings})
+

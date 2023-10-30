@@ -1370,7 +1370,7 @@ Just to make a note of this the database used in the workspace (db.sqlite3) does
 
 ## Credits 
 
- 
++ Thanks to the tutors at Coding instatute and to my mentor Anthony for guiding me through my project. I would also like to thank Katie Duggan for proofreading the content.
  
 
 + This help me set up the time zone correctly  [Timezone](https://www.educative.io/answers/what-is-djangoutilstimezone) 
