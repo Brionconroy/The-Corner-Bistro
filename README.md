@@ -205,7 +205,82 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 ### Manual Testing
 
-# User Stories Testing
+### Features Testing
+
+**Navbar**
+
+|Test  | Expected Outcome  | Pass or Fail |
+|--|--|--|
+| The Corner Bistro Logo present | Yes  | Pass |
+| Click Logo in navbar | Home page Redirect | Pass |
+| Click Home in navbar | Home page Redirect | Pass |
+| Click Menu in navbar| Bring user to menu page | Pass |
+| Click Log-in | Redirect to Log-in page | Pass |
+| Click Log-out | Redirect to Log-out page | Pass |
+| Click Sign-up | Redirect to Sign-up page | Pass |
+| If user Logged in booking apears in navbar | log-in disapears and booking apears | Pass |
+| Click Booking in navbar | Redirect to Booking page | Pass |
+
+**Booking Form**
+
+|Test  | Expected Outcome  | Pass or Fail |
+|--|--|--|
+| Booking form only apear in navbar if logged in | Yes  | Pass |
+| First name must be entered for the form to be submitted | Yes  | Pass |
+| Last name must be entered for the form to be submitted | Yes | Pass |
+| Email must be entered for the form to be submitted | Yes | Pass |
+| Time field apear with start time of 12:00 | Yes | Pass |
+| Date field apear with todays date | Yes | Pass |
+| Number of guest field only excepts number | Yes | Pass |
+| Special Request/Requirments field must take information | Yes | Pass |
+| Clicking Reserve button send booking to the database | Yes | Pass |
+
+**Booking Detials**
+
+|Test  | Expected Outcome  | Pass or Fail |
+|--|--|--|
+| Booking details page will only apear after you've made a booking | Yes  | Pass |
+| Booking details page will only show your booking | It shows you all the booking on the database  | Fail |
+| Clicking Cancel will return you to the home page | Yes | Pass |
+| Clicking Cancel will give you confermation of your cancelation | No  | Fail |
+| Clicking Update Booking will update booking | No | Fail |
+| Clicking Update Booking will also return you to the home page | No | Fail |
+| Clicking Update Booking will give you confermation of updated booking | No | Fail |
+
+**Sign-up**
+
+|Test  | Expected Outcome  | Pass or Fail |
+|--|--|--|
+| Sign-up form creates an account on the database | Yes  | Pass |
+| Form must have a username to create an account | Yes  | Pass |
+| Form must have a passwoard to create an account | Yes  | Pass |
+| Account will only be created if password is entered twice correctly | Yes  | Pass |
+| Form doesnt have to have email but will except it if user wants | Yes  | Pass |
+| The sign up button will redirect you to home page | Yes  | Pass |
+| The sign up button will log you in | Yes  | Pass |
+
+**Sign-in**
+
+|Test  | Expected Outcome  | Pass or Fail |
+|--|--|--|
+| Sign-in form signs in a user if information is correct  | Yes  | Pass |
+| Sign-in form dose not signs in a user if information is incorrect  | Yes  | Pass |
+| Sign-in form throughts a (The username and/or password you specified are not correct.) if password is incorecect| Yes  | Pass |
+| Sign-in form throughts a (The username and/or password you specified are not correct.) if username is incorecect| Yes  | Pass |
+| The Rememeber Me if toggled remembers users information | Yes  | Pass |
+| Clicking sign-in button will sign you in | Yes  | Pass |
+| Clicking sign-in button will also return you to the home page if clicked | Yes  | Pass |
+| Clicking Forgot Password will send you reset password email | it return a error 500 | Fail |
+
+**Sign-out**
+
+|Test  | Expected Outcome  | Pass or Fail |
+|--|--|--|
+| Sign-out will only apear in navbar if signed in | Yes  | Pass |
+| Sign-out message apear on page asking you are you sure you want to sign out | Yes  | Pass |
+| clicking Sign-out will redirect user to home page | Yes  | Pass |
+
+### User Stories Testing
 
 #### 1. Pages
 
