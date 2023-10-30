@@ -10,8 +10,8 @@ This website also allows a users to create a login, make a booking at the restru
 
 To create this website Agile principles where used. The frameworks used were bootstrap and django. 
 
- 
- 
+ + This is a link to my live website [Live site](https://the-corner-bistro-6432029ab4f6.herokuapp.com/)
+ + This is a link to my Repo [Repo](https://github.com/Brionconroy/The-Corner-Bistro)
 
 --- 
 
@@ -470,7 +470,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
  
 
-## Testing 
+# Testing 
 
  
  
@@ -484,17 +484,24 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
   + The fix was to move my booking_service app in the installeed app section in setting.py above the allauth installed app. this means the booking_service app was loading first. 
 
++ When I try to view my Booking detials it shows me multiple Booking. This bug has not yet been resolved but will be in the future. Due to time constaints I must leave the bug in for now.
+
+  + The fix i believe is using a primary Key on each booking. When you want to see a booking call the primary key in the views.py file. 
+
  
  
 
-### Manual Testing 
+### Manual Testing
 
- 
- 
+
 
 ### Features Testing
 
+
+
 **Navbar**
+
+
 
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
@@ -505,106 +512,156 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 | Click Log-in | Redirect to Log-in page | Pass |
 | Click Log-out | Redirect to Log-out page | Pass |
 | Click Sign-up | Redirect to Sign-up page | Pass |
-| If user Logged in booking apears in navbar | log-in disapears and booking apears | Pass |
+| If user Logged in booking appears in navbar | log-in disappears and booking appears | Pass |
 | Click Booking in navbar | Redirect to Booking page | Pass |
+
+
 
 **Booking Form**
 
+
+
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
-| Booking form only apear in navbar if logged in | Yes  | Pass |
+| Booking form only appear in navbar if logged in | Yes  | Pass |
 | First name must be entered for the form to be submitted | Yes  | Pass |
 | Last name must be entered for the form to be submitted | Yes | Pass |
 | Email must be entered for the form to be submitted | Yes | Pass |
-| Time field apear with start time of 12:00 | Yes | Pass |
-| Date field apear with todays date | Yes | Pass |
+| Time field appear with start time of 12:00 | Yes | Pass |
+| Date field appear with today’s date | Yes | Pass |
 | Number of guest field only excepts number | Yes | Pass |
-| Special Request/Requirments field must take information | Yes | Pass |
+| Special Request/Requirements field must take information | Yes | Pass |
 | Clicking Reserve button send booking to the database | Yes | Pass |
 
-**Booking Detials**
+
+
+**Booking Details**
+
+
 
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
-| Booking details page will only apear after you've made a booking | Yes  | Pass |
+| Booking details page will only appear after you've made a booking | Yes  | Pass |
 | Booking details page will only show your booking | It shows you all the booking on the database  | Fail |
 | Clicking Cancel will return you to the home page | Yes | Pass |
-| Clicking Cancel will give you confermation of your cancelation | No  | Fail |
+| Clicking Cancel will give you confirmation of your cancelation | No  | Fail |
 | Clicking Update Booking will update booking | No | Fail |
 | Clicking Update Booking will also return you to the home page | No | Fail |
-| Clicking Update Booking will give you confermation of updated booking | No | Fail |
+| Clicking Update Booking will give you confirmation of updated booking | No | Fail |
+
+
 
 **Sign-up**
+
+
 
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
 | Sign-up form creates an account on the database | Yes  | Pass |
 | Form must have a username to create an account | Yes  | Pass |
-| Form must have a passwoard to create an account | Yes  | Pass |
+| Form must have a password to create an account | Yes  | Pass |
 | Account will only be created if password is entered twice correctly | Yes  | Pass |
-| Form doesnt have to have email but will except it if user wants | Yes  | Pass |
+| Form doesn’t have to have email but will except it if user wants | Yes  | Pass |
 | The sign up button will redirect you to home page | Yes  | Pass |
 | The sign up button will log you in | Yes  | Pass |
 
+
+
 **Sign-in**
+
+
 
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
 | Sign-in form signs in a user if information is correct  | Yes  | Pass |
 | Sign-in form dose not signs in a user if information is incorrect  | Yes  | Pass |
-| Sign-in form throughts a (The username and/or password you specified are not correct.) if password is incorecect| Yes  | Pass |
-| Sign-in form throughts a (The username and/or password you specified are not correct.) if username is incorecect| Yes  | Pass |
-| The Rememeber Me if toggled remembers users information | Yes  | Pass |
+| Sign-in form will throw a (The username and/or password you specified are not correct.) if password is incorrect| Yes  | Pass |
+| Sign-in form will throw a (The username and/or password you specified are not correct.) if username is incorrect| Yes  | Pass |
+| The Remember Me if toggled remembers users information | Yes  | Pass |
 | Clicking sign-in button will sign you in | Yes  | Pass |
 | Clicking sign-in button will also return you to the home page if clicked | Yes  | Pass |
 | Clicking Forgot Password will send you reset password email | it return a error 500 | Fail |
 
+
+
 **Sign-out**
+
+
 
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
-| Sign-out will only apear in navbar if signed in | Yes  | Pass |
-| Sign-out message apear on page asking you are you sure you want to sign out | Yes  | Pass |
+| Sign-out will only appear in navbar if signed in | Yes  | Pass |
+| Sign-out message appear on page asking you are you sure you want to sign out | Yes  | Pass |
 | clicking Sign-out will redirect user to home page | Yes  | Pass |
+
+**Footer**
+
+
+
+|Test  | Expected Outcome  | Pass or Fail |
+|--|--|--|
+| Footers links all work | Yes  | Pass |
+| Links bring you to each site in a diffent tab | Yes  | Pass |
 
 ### User Stories Testing
 
+
+
 #### 1. Pages
+
+
 
 | **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
 |-------------|------------|---------------------|-------------------|-------------------|
-| 1 | View Website Landing Page | As a user I can navigate to the website so that I can make a booking | The Restaurant will need a visible landing page for customers to view.The page must have a navbar in header. The page should have an introductory paragraph. The page should have social media links in the footer. | Pass |
-| 12 | View Menu Page | As a user i can view the menu so that Information of what's i can eat in the Restaurant. | Menu button in the home page navbar. Navbar button brings me to a separate page. The new page shows me the menu. | Pass |
+| 1 | View Website Landing Page | As a user, I can navigate to the website so that I can make a booking | The Restaurant will need a visible landing page for customers to view. The page must have a navbar in header. The page should have an introductory paragraph. The page should have social media links in the footer. | Pass |
+| 12 | View Menu Page | As a user, I can view the menu to get information about what I can eat in the restaurant. | Menu button in the home page navbar. The Navbar button brings me to a separate page. The new page shows me the menu. | Pass |
+
+
 
 #### 2. Admin
 
+
+
 | **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
 |-------------|------------|---------------------|-------------------|-------------------|
-| 8 | Admin Control Page | As a Admin user i can view and manipulate bookings so that I con received booking data | That a authenticated Admin user can select and view date and times for booking information. | Pass |
-| 6 | Delete Booking as Admin | As a Admin i can make Changes to the booking so that Delete a booking | A Admin can select which booking to delete. Admin user must be able to delete booking from the site. | Pass |
+| 8 | Admin Control Page | As a Admin user, I can view and manipulate bookings | As an authenticated Admin user, I can select and view date and times for booking information. | Pass |
+| 6 | Delete Booking as Admin | As an Admin, I can make Changes to the booking and delete a booking | As an Admin, I can select which booking to delete. Admin users must be able to delete booking from the site. | Pass |
+
+
 
 #### 3. User
 
+
+
 | **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
 |-------------|------------|---------------------|-------------------|-------------------|
-| 11 | User Sign-up | As a User I want to be able to sign-up so that I can see my booking | Must be linked to sign up page in the navbar. Must have a form to get users personal information. Should return you to the home page after sign up. | Pass |
-| 10 | User Log-in | As a User i can make a Log-in so that edit my booking |  Create a Log-in form for the user with password to protect user data. Store basic customer information on database system. | Pass |
+| 11 | User Sign-up | As a User, I want to be able to sign-up so that I can see my booking | Must be linked to sign up page in the navbar. Must have a form to get user’s personal information. Should return you to the home page after sign up. | Pass |
+| 10 | User Log-in | As a User, I can make a Log-in so that I can edit my booking |  Create a Log-in form for the user with password to protect user data. Store basic customer information on database system. | Pass |
 | 2 | Make online Booking | As a User I can access an online booking form so that I can make my online booking. |  There must be a button on the page in order to redirect the customer to a form for making a booking. This form must ask for User details for making a booking. All the User booking details must be saved to data base. | Pass |
-| 3 | User Information Form | In order to make a booking as a user I want to fill out a form so the Restaurant knows my details about my booking. | Have a link on the home page that redirects to the form. The form must contain all relevant booking details. Admin must be able to see all the booking in admin panal. | Pass |
+| 3 | User Information Form | In order to make a booking as a user, I want to fill out a form so the Restaurant knows booking details. | Have a link on the home page that redirects to the form. The form must contain all relevant booking details. Admin must be able to see all the booking in admin panel. | Pass |
 
-#### 4. Im Progress
 
-| **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
-|-------------|------------|---------------------|-------------------|-------------------|
-| 4 | User Booking view | As a user i can view my online booking so that I can make changes to it | Once User logs-in they can view there booking details. Once User logs-in they can make changes to there bookings. | In Progress |
-| 9 | Edit Online Booking | As a User I wont to be able to edit my booking make a change if i need too. | A User can select there booking to edit. A User must be able to change they data of that booking. A User can get confirmation of change in there booking. | In Progress |
 
-#### 4. Potentail Features
+#### 4. In Progress
+
+
 
 | **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
 |-------------|------------|---------------------|-------------------|-------------------|
-| 7 | Prevent Over Booking | In order to avoid over booking as a user I can access the booking log which checks for availability. | The create log that checks if the Restaurant has availability in the database. The user can view this log. | Fail |
-| 13 | Log-in with third party account | As a User i can login with my google account so that i don't have to se up an account with the restaurant | In log-in page there should be a button that allows me to sign in with my google account | Fail |RGyDn1XWTMpPyycY4Ewfn20lNwE@du4zinzmk"
+| 4 | User Booking view | As a user, I can view my online booking so that I can make changes to it | Once a User logs-in, they can view their booking details. Once a User logs-in they can make changes to their bookings. | In Progress |
+| 9 | Edit Online Booking | As a User I want to be able to edit my booking and make a change if I need too. | A User can select their booking to edit. A User must be able to change the data of that booking. A User can get confirmation of changes in there booking. | In Progress |
+
+
+
+#### 5. Potential Features
+
+
+
+| **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
+|-------------|------------|---------------------|-------------------|-------------------|
+| 7 | Prevent Over Booking | In order to avoid over booking, as a user, I can access the booking log which checks for availability. | The log checks if the Restaurant has availability. The user can view this log. | Fail |
+| 13 | Log-in with third party account | As a User, I can login with my google account so that I don't have to set up an account with the restaurant | In log-in page there should be a button that allows me to sign in with my google account | Fail |
+
 ### Code Validation 
 
  
@@ -1366,7 +1423,9 @@ Just to make a note of this the database used in the workspace (db.sqlite3) does
 + Step 29: Well done!! 
 
  
- 
+## Conclusion
+
+This project has thought me a lot about the differnt technologys used. It has also thought me a lot about time constrains and working to a deadline. The deadlines forced me to prioritize differnt parts of the project with User Storys and MoSCoW thinking. Moving on if you get stuck on something small and come back to it at a later time is a must when you have time constains. keeping everything well documented is a must, when not fully finishing feature (if you get stuck) so that when you come back to the feature you can pick up where you left off. 
 
 ## Credits 
 
