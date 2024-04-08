@@ -48,6 +48,6 @@ def delete_booking(request):
 def edit_booking(request):
     booking_id = get_object_or_404(Reservation)
     edit_form = {
-                "edit_form": BookingForm(instance=booking_id)
+                "edit_form": UserBookingForm()
             }
     return render(request, "booking_service/edit_booking.html", edit_form)

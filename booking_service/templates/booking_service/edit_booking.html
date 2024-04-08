@@ -1,0 +1,46 @@
+{% extends 'booking_service/base.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+{% if user.is_authenticated %}
+
+<div class="container form_layout">
+  <div class="row your_booking_table ">
+    <div>
+
+    
+      <div class="booking_view">
+        <h2 class="text-center form-text-bold pb-3">Edit Reservation</h2>
+      </div>
+      <form method="Post" class="booking_form">
+
+        
+        {% csrf_token %}
+        {{ edit_form | crispy }}
+
+      
+        <div class="row">
+
+          <div class="col-0"></div>
+      
+          <div class="col-12 text-center py-3">
+            <button class="btn-background btn btn-outline-dark font-weight-bold btn-block" type="submit">
+              <span>Update Info &nbsp;&nbsp;</span><i class="fa-solid fa-pen-to-square"></i>
+            </button>
+          </div>
+      
+          <div class="col-0"></div>
+      
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+{% endif %}
+
+{% endblock %}
