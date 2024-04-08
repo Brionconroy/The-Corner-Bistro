@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from booking_service import views
-from booking_service.views import booking, booking_details
+from booking_service.views import booking, booking_details, delete_booking
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -11,4 +11,5 @@ urlpatterns = [
     path('booking/', booking, name='booking'),
     path('menu/', views.menu, name='menu'),
     path('booking_details/', booking_details, name='booking_details'),
+    path('delete_booking/', delete_booking, name='deletebooking'),
 ]

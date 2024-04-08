@@ -89,6 +89,13 @@ body {
     background-color: rgba(202, 213, 202, 0.85);
  }
 
+ .table_header {
+    color: #000000;
+    background-color: rgba(202, 213, 202, 0.85);
+    border-color: #32383e;
+    text-align: center;
+ }
+
 /* index page layout */
 
 .p-top {

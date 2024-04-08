@@ -17,11 +17,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['the-corner-bistro-6432029ab4f6.herokuapp.com',
                  'localhost',
-                 '8000-brionconroy-thecornerbi-ngwcjn409f0.ws-eu105.gitpod.io']
+                 '8000-brionconroy-thecornerbi-m3a76w9nq54.ws-eu110.gitpod.io']
 
 
 # Application definition

@@ -10,11 +10,11 @@ class Reservation(models.Model):
     last_name = models.CharField(max_length=50, blank=False,
                                  null=False, default='')
     naming_id = models.AutoField(primary_key=True)
-    email = models.EmailField(default='')
+    email = models.EmailField(blank=True)
     date = models.DateField(auto_now=False, default=django.utils.timezone.now)
-    time = models.TimeField(default="12:00")
-    number_of_guests = models.PositiveSmallIntegerField()
-    special_request_requirments = models.TextField(default='')
+    time = models.TimeField(default="10:00", blank=False)
+    number_of_guests = models.PositiveSmallIntegerField(null=False, blank=False)
+    special_request_requirments = models.TextField(blank=True)
 
     class Meta:
         ordering = ["naming_id"]

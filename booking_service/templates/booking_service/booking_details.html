@@ -11,19 +11,39 @@
 
                     {% csrf_token %}
                     <h2>Your Booking</h2>
-                    <table class="your_booking_table">
+                    <table class="your_booking_table table-sm table-bordered">
+
+                        <thead class="table_header">
+                            <tr>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">No. Geusts</th>
+                                <th scope="col" colspan="2">Edit</th>
+                            </tr>
+                        </thead>
+
                         {% for data in bookings %}
                         <tr>
-                            <td>{{ booking }}</td>
+                            <td>{{ data.first_name }}</td>
                             <td>{{ data.last_name }}</td>
                             <td>{{ data.time }}</td>
                             <td>{{ data.date }}</td>
                             <td>{{ data.number_of_guests }}</td>
+                            <td class="text-center">
+                                <a href="/edit_booking/{{ booking.id }}" class="btn-sm btn-outline-dark font-weight-bold">
+                                  Change
+                                </a>
+                              </td>
+                              <td class="text-center">
+                                <a href="/delete_booking/{{ booking.id }}" class="btn-sm btn-outline-danger font-weight-bold">
+                                  Delete
+                                </a>
+                              </td>
                         </tr>
                         {% endfor %}
                     </table>
-                    <a href="{% url 'index' %}" class="btn btn-danger">Cancel</a>
-                    <button type="submit" class="btn btn-success button_color">Update Booking</button>
                 </form>
             </div>
         </div>

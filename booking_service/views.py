@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, HttpResponseRedirect
+from django.shortcuts import render, redirect, HttpResponseRedirect, get_object_or_404
 from .forms import UserBookingForm
 from django.contrib import messages
 from .models import Reservation
@@ -37,3 +37,17 @@ def booking_details(request):
                   'booking_service/booking_details.html',
                   {'bookings': bookings})
 
+def delete_booking(request):
+    booking_id = get_object_or_404(Reservation)
+    booking_id.delete()
+    bookings = Reservation.objects.all()
+    return render(request,
+                  'booking_service/booking_details.html',
+                  {'bookings': bookings})
+
+def edit_booking(request):
+    booking_id = get_object_or_404(Reservation)
+    edit_form = {
+                "edit_form": BookingForm(instance=booking_id)
+            }
+    return render(request, "booking_service/edit_booking.html", edit_form)
