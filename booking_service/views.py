@@ -24,7 +24,6 @@ def booking(request):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
-            messages.info(request, 'Booking Successfully!')
             return redirect('booking_details')
             pass
     else:

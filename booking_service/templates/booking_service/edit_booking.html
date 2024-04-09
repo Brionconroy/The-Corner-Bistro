@@ -9,37 +9,19 @@
 {% if user.is_authenticated %}
 
 <div class="container form_layout">
-  <div class="row your_booking_table ">
-    <div>
-
-    
-      <div class="booking_view">
-        <h2 class="text-center form-text-bold pb-3">Edit Reservation</h2>
-      </div>
-      <form method="Post" class="booking_form">
-
-        
-        {% csrf_token %}
-        {{ edit_form | crispy }}
-
-      
-        <div class="row">
-
-          <div class="col-0"></div>
-      
-          <div class="col-12 text-center py-3">
-            <button class="btn-background btn btn-outline-dark font-weight-bold btn-block" type="submit">
-              <span>Update Info &nbsp;&nbsp;</span><i class="fa-solid fa-pen-to-square"></i>
-            </button>
-          </div>
-      
-          <div class="col-0"></div>
-      
-        </div>
-
+  <div class="row">
+    <div class="col-md-8 mt-3 offset-md-2">
+      <form method="Post" class="booking_form"></form>
+        <h2 class="booking_header">Edit Reservation</h2>
+          {% csrf_token %}
+          {{ edit_form | crispy }}
+          <button class="btn-background btn btn-outline-dark btn-block" type="submit">
+            <span>Update Info &nbsp;&nbsp;</span><i class="fa-solid fa-pen-to-square"></i>
+          </button>
       </form>
     </div>
   </div>
+</div>
 
 {% endif %}
 

@@ -4,6 +4,8 @@
 
 {% load crispy_forms_tags %}
 
+{% if user.is_authenticated %}
+
 <div class="container form_layout" >
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
@@ -11,10 +13,21 @@
                 <h2 class="booking_header">Booking</h2>
                 {% csrf_token %}
                 {{ form | crispy }}
-                <button type="submit" class="btn btn-background">Reserve</button>
+                <button type="submit" class="btn-background btn btn-outline-dark btn-block">Reserve</button>
             </form>
         </div>
     </div>
 </div>
+
+<div class="text-center res-btn">
+  <div>
+    <a href="../booking_details/" class="btn btn-background">
+      <span>View reservations &nbsp;&nbsp;</span><i class="fa-solid fa-calendar-days"></i>
+    </a>
+  </div>
+
+</div>
+
+{% endif %}
 
 {% endblock %}
