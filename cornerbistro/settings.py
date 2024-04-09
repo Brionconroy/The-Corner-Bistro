@@ -21,7 +21,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['the-corner-bistro-6432029ab4f6.herokuapp.com',
                  'localhost',
-                 '8000-brionconroy-thecornerbi-m3a76w9nq54.ws-eu110.gitpod.io']
+                 '8000-brionconroy-thecornerbi-m3a76w9nq54.ws-eu110.gitpod.io',
+                 '127.0.0.1']
 
 
 # Application definition

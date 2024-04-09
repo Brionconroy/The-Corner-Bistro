@@ -15,6 +15,7 @@ class Reservation(models.Model):
     time = models.TimeField(default="10:00", blank=False)
     number_of_guests = models.PositiveSmallIntegerField(null=False, blank=False)
     special_request_requirments = models.TextField(blank=True)
+    user_id = models.PositiveSmallIntegerField(null=False, blank=False)
 
     class Meta:
         ordering = ["naming_id"]

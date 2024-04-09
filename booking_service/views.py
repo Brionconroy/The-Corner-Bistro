@@ -22,31 +22,37 @@ def booking(request):
         form = UserBookingForm(request.POST)
         if form.is_valid():
             booking = form.save(commit=False)
-            booking.user = request.user
+            booking.user_id = request.user.id
             booking.save()
             return redirect('booking_details')
-            pass
     else:
         return render(request, 'booking_service/booking.html', {'form': form})
 
 
 def booking_details(request):
-    bookings = Reservation.objects.all()
+    bookings = Reservation.objects.all().filter(user_id=request.user.id)
     return render(request,
                   'booking_service/booking_details.html',
                   {'bookings': bookings})
 
-def delete_booking(request):
-    booking_id = get_object_or_404(Reservation)
-    booking_id.delete()
-    bookings = Reservation.objects.all()
-    return render(request,
-                  'booking_service/booking_details.html',
-                  {'bookings': bookings})
+def delete_booking(request, naming_id):
+    booking = get_object_or_404(Reservation, naming_id = naming_id)
+    booking.delete()
+    return redirect('booking_details')
 
-def edit_booking(request):
-    booking_id = get_object_or_404(Reservation)
+
+def edit_booking(request, naming_id):
+    booking = get_object_or_404(Reservation, naming_id = naming_id)
     edit_form = {
-                "edit_form": UserBookingForm()
+                "edit_form": UserBookingForm(instance=booking)
             }
-    return render(request, "booking_service/edit_booking.html", edit_form)
+    if request.method == 'POST':
+        form = UserBookingForm(request.POST)
+        if form.is_valid():
+            booking = form.save(commit=False)
+            booking.user_id = request.user.id
+            booking.naming_id = naming_id
+            booking.save()
+            return redirect('booking_details')
+    else:
+        return render(request, "booking_service/edit_booking.html", edit_form)
