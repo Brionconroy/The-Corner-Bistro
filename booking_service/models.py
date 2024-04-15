@@ -13,7 +13,8 @@ class Reservation(models.Model):
     email = models.EmailField(blank=True)
     date = models.DateField(auto_now=False, default=django.utils.timezone.now)
     time = models.TimeField(default="10:00", blank=False)
-    number_of_guests = models.PositiveSmallIntegerField(null=False, blank=False)
+    number_of_guests = models.PositiveSmallIntegerField(null=False,
+                                                        blank=False)
     special_request_requirments = models.TextField(blank=True)
     user_id = models.PositiveSmallIntegerField(null=False, blank=False)
 

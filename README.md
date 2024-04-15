@@ -542,12 +542,12 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
 | Booking details page will only appear after you've made a booking | Yes  | Pass |
-| Booking details page will only show your booking | It shows you all the booking on the database  | Fail |
+| Booking details page will only show logged in users booking | yes | Pass |
 | Clicking Cancel will return you to the home page | Yes | Pass |
-| Clicking Cancel will give you confirmation of your cancelation | No  | Fail |
-| Clicking Update Booking will update booking | No | Fail |
-| Clicking Update Booking will also return you to the home page | No | Fail |
-| Clicking Update Booking will give you confirmation of updated booking | No | Fail |
+| Clicking delete will delete your booking | Yes  | Pass |
+| Clicking Update Booking will update booking | Yes | Pass |
+| Clicking Update Booking will bring you to a prepopulated form with you booking information on it | Yes | Pass |
+| Clicking Update Booking will give you confirmation of updated booking | Yes | Pass |
 
 
 
@@ -648,8 +648,8 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 | **ID** | **User Story** |**As a..** | **Acceptance Criteria:** | **Pass / Fail / In Progress** |
 |-------------|------------|---------------------|-------------------|-------------------|
-| 4 | User Booking view | As a user, I can view my online booking so that I can make changes to it | Once a User logs-in, they can view their booking details. Once a User logs-in they can make changes to their bookings. | In Progress |
-| 9 | Edit Online Booking | As a User I want to be able to edit my booking and make a change if I need too. | A User can select their booking to edit. A User must be able to change the data of that booking. A User can get confirmation of changes in there booking. | In Progress |
+| 4 | User Booking view | As a user, I can view my online booking so that I can make changes to it | Once a User logs-in, they can view their booking details. Once a User logs-in they can make changes to their bookings. | Pass |
+| 9 | Edit Online Booking | As a User I want to be able to edit my booking and make a change if I need too. | A User can select their booking to edit. A User must be able to change the data of that booking. A User can get confirmation of changes in there booking. | Pass |
 
 
 
@@ -834,25 +834,6 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 </details> 
 
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>booking service url.py</summary> 
-
- 
- 
-
-![booking_service_url.py](booking_service/static/images/readme/validation_testing/booking_service_url.py_validator.png) 
-
- 
- 
-
-</details> 
 
  
  
