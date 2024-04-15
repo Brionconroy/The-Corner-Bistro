@@ -35,7 +35,6 @@ def booking_details(request):
                   'booking_service/booking_details.html',
                   {'bookings': bookings})
 
-
 def delete_booking(request, naming_id):
     booking = get_object_or_404(Reservation, naming_id=naming_id)
     booking.delete()
@@ -43,7 +42,7 @@ def delete_booking(request, naming_id):
 
 
 def edit_booking(request, naming_id):
-    booking = get_object_or_404(Reservation, naming_id=naming_id)
+    booking = get_object_or_404(Reservation, naming_id = naming_id)
     edit_form = {
                 "edit_form": UserBookingForm(instance=booking)
             }
