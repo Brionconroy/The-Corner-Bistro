@@ -50,8 +50,8 @@
                 Bookings
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" aria-current="page" href="{% url 'booking_details' %}">Manage Bookings</a></li>
-                <li><a class="dropdown-item" aria-current="page" href="{% url 'booking' %}">New Booking</a></li>                       
+              <li><a class="dropdown-item" aria-current="page" href="{% url 'booking' %}">New Booking</a></li>    
+              <li><a class="dropdown-item" aria-current="page" href="{% url 'booking_details' %}">Manage Bookings</a></li>                   
             </ul>
         </li>
           <li class="nav-item">
@@ -80,6 +80,15 @@
       </div>
     </div>
   </div>
+
+  {% if messages %}
+    <!-- messages -->
+    <div class="toasts">
+        {% for message in messages %}
+        {% include 'toasts/toast.html' %}
+        {% endfor %}
+    </div>
+    {% endif %}
   
   <!-- Footer  -->
   <footer class="footer mt-auto py-3 dark-bg">

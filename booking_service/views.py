@@ -24,6 +24,10 @@ def booking(request):
             booking = form.save(commit=False)
             booking.user_id = request.user.id
             booking.save()
+            messages.success(
+            request,
+            f'Booking Created'
+        )
             return redirect('booking_details')
     else:
         return render(request, 'booking_service/booking.html', {'form': form})
@@ -38,6 +42,10 @@ def booking_details(request):
 def delete_booking(request, naming_id):
     booking = get_object_or_404(Reservation, naming_id=naming_id)
     booking.delete()
+    messages.success(
+            request,
+            f'Successfully Deleted Booking'
+        )
     return redirect('booking_details')
 
 
@@ -53,6 +61,10 @@ def edit_booking(request, naming_id):
             booking.user_id = request.user.id
             booking.naming_id = naming_id
             booking.save()
+            messages.success(
+            request,
+            f'Successfully Updated Booking'
+        )
             return redirect('booking_details')
     else:
         return render(request, "booking_service/edit_booking.html", edit_form)
