@@ -1,11 +1,7 @@
 from .models import Reservation
 from django import forms
+from .widget import DatePickerInput, TimePickerInput
 
-
-class DateInput(forms.DateInput):
-    """This will set the input type variable required for widget
-    on UserBookingForm"""
-    input_type = 'date'
 
 class UserBookingForm(forms.ModelForm):
     class Meta:
@@ -18,6 +14,7 @@ class UserBookingForm(forms.ModelForm):
                   'number_of_guests',
                   'special_request_requirments')
         widgets = {
-            'date': DateInput(),
+            'date': DatePickerInput(),
+            'time' : TimePickerInput(),
             }
                   
