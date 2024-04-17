@@ -1423,7 +1423,9 @@ This project has thought me a lot about the differnt technologys used. It has al
  
  
 
-+ This helped me set up my menu format [Codesandbox](https://codesandbox.io/s/restaurant-menu-with-html-css-3bqzx?file=/index.html:527-5114) 
++ This helped me set up my menu format [Codesandbox](https://codesandbox.io/s/restaurant-menu-with-html-css-3bqzx?file=/index.html:527-5114)
+
++ This helped set up the time and date in the forms with widgets [DateTimepicker](https://nancylin.xyz/how-to-implement-date-time-picker-in-django-without-javascript/) 
 
  
  

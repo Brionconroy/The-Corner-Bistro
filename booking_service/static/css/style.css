@@ -53,7 +53,7 @@ body {
 .toasts {
     position: fixed;
     top: 100px;
-    right: 10px;
+    right: 20px;
     z-index: 99999999999;
     width: 300px;
 }
